@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.balance {
+  font-size: 20px;
+}
+
+.balance-amount {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.income-expense {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.income-expense div:nth-child(2) {
+  border-right: 1px solid #ccc;
+}
+
+.income {
+  text-align: center;
+  color: green;
+  font-size: 20px;
+}
+
+.expense {
+  text-align: center;
+  color: red;
+  font-size: 20px;
+}
+
+.transactions h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.transaction {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.add-transaction h2 {
+  font-size: 20px;
+}
+
+.add-transaction hr {
+  margin: 10px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input[type='submit'] {
+  background-color: rgb(151, 101, 233);
+  border: none;
+  padding: 10px;
+
+  font-size: 16px;
+  color: #fff;
+}
+
+.positive {
+  border-right: 3px solid green;
+}
+
+.negative {
+  border-right: 3px solid red;
+}
